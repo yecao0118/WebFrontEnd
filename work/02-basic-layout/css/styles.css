@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Grid Layout */
+#homepage {
+    display: grid;
+    padding: 1px;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 4fr auto;
+ 
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background-color: plum;
+    padding: 0;
+}
+
+nav.primary-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+
+nav.primary-nav li {
+    margin: 0 80px;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+
+nav.primary-nav a {
+    text-decoration: underline;
+    font-size: 15px;
+    color: blue;
+    padding: 20px 20px;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    line-height: inherit;
+    height: 100%;
+}
+
+nav.primary-nav a:hover {
+  color: #f1f1f1;
+  background-color: rebeccapurple;
+}
+
+/* Menu */
+nav.local-menu {
+    grid-area: menu;
+    background-color: pink;
+    font-size: 15px;
+    color: black;
+    padding: 5px 0 5px 5px;
+    border-right: 1px solid black;
+}
+
+nav.local-menu ul {
+    list-style-type: none;
+}
+
+nav.local-menu li {
+    padding: 0 5px;
+}
+
+nav.local-menu a {
+    text-decoration: underline;
+    font-size: 15px;
+    color: blue;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    column-width: inherit;
+    background-color: pink;
+}
+
+nav a:hover {
+  background-color: plum;
+  width: 100%;
+}
+
+/* Main */
+main {
+    grid-area: main;
+    background-color: pink;
+    color: black;
+    padding: 1rem;
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: plum;
+    color: black;
+    padding: 1rem;
+}
