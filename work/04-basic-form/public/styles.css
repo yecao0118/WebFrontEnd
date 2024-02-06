@@ -1,0 +1,131 @@
+/*General Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 360px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.8); 
+  border-bottom: 2px solid #004080;
+  color: #333;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  margin: 20px auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #858484;
+  padding: 0.5rem;
+  color: #fff;
+  border-top: 2px solid #ccc;
+}
+footer a {
+  color: #fff;
+  font-size: small;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-notice {
+  font-size: 0.9rem;
+  color: #555; 
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+input, select{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.required-label::after {
+  content: " *";
+  color: red;
+}
+button {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #0059b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.checkbox-container label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+.checkbox-container input[type="checkbox"] {
+  grid-column: 1 / 2;
+}
+.checkbox-container span {
+  grid-column: 2 / 3;
+}
+a:focus, input:focus, select:focus, button:focus {
+  outline: 2px solid #004080;
+}
+
+@media (min-width: 600px) {
+  body {
+    max-width: 1000px;
+    padding: 20px;
+    display: block;
+  }
+  header {
+    font-size: 1rem;
+  }
+  .form-field {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+  }
+  .checkbox-container label {
+    font-size: 1rem;
+  }
+  footer {
+    justify-content: center;
+  }
+}
