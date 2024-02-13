@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.JPG" alt="A serene tricolor cat gazes into the distance, adorned with a black collar and bell against a blurred green grassy backdrop.">
+        </a>
+        <h1>WELCOME TO DANDAN'S WORLD</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">DANDAN WORLD</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li><a>MORE INFO</a>
+                    <ul class="dropdown">
+                        <li><a href="https://en.wikipedia.org/wiki/Cat">Wikipedia - Cats</a></li>
+                        <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat">National Geographic - Cats</a></li>
+                        <li><a href="https://www.aspca.org/pet-care/cat-care">ASPCA - Cat Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-message-container">
+            <div class="contact-info">
+                <p>If you have any questions or just want to say hello, don't hesitate to reach out!</p>
+                <p>Email: <a href="mailto:contact@dandanworld.com">contact@dandanworld.com</a></p>
+            </div>
+            <div class="message">
+                <form action="/register" method="POST">
+                    <div class="message-form-field">
+                        <label for="message">Leave Me A Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Hi Dandan!" required>
+                    </div>
+                    <div class="message-button-container">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <div class="footer-container">
+            <a href="terms.html" class="terms">Terms of Use</a>
+            <a href="privacy.html" class="privacy">Privacy Policy</a>
+            <p>© 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
