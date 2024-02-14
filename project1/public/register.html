@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>   
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.JPG" alt="A serene tricolor cat gazes into the distance, adorned with a black collar and bell against a blurred green grassy backdrop.">
+        </a>
+        <h1>WELCOME TO DANDAN'S WORLD</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">MENU</a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li><a>MORE INFO</a>
+                    <ul class="dropdown">
+                        <li><a href="https://en.wikipedia.org/wiki/Cat">Wikipedia - Cats</a></li>
+                        <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat">National Geographic - Cats</a></li>
+                        <li><a href="https://www.aspca.org/pet-care/cat-care">ASPCA - Cat Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>SUBSCRIBE TO DANDAN'S ADVENTURES!</h2>
+        <form action="/register" method="POST">
+            <div class="form-row"> 
+                <div class="form-notice">* Indicates required field</div>
+            <div class="form-field">
+                <label for="name" class="required-label">Your Name (or your cat's):</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label for="email" class="required-label">Cat Parent's Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="checkbox-container">
+                <label for="annoy-me">
+                    <input type="checkbox" id="annoy-me" name="annoy-me" checked>
+                    <span>Yes, keep me updated with Dandan's purr-tastic news!</span>
+                </label>
+            </div>            
+            <div class="form-field">
+                <label for="tier" class="required-label">Support Tier:</label>
+                <select id="tier" name="tier" required>
+                    <option value="" disabled selected>Please select</option>
+                    <option value="1">Silver Whisker Tier</option>
+                    <option value="2">Golden Paw Tier</option>
+                    <option value="3">Platinum Tail Tier</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit">Join Dandan's Club</button>
+            </div>
+            </div>
+        </form>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            <a href="terms.html" class="terms">Terms of Use</a>
+            <a href="privacy.html" class="privacy">Privacy Policy</a>
+            <p>© 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
