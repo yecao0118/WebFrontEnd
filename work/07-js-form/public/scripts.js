@@ -12,8 +12,10 @@
     function checkNameInput() {
         if (!nameEL.value.trim()) {
             nameErrorEL.innerText = 'Name is required.';
+            return false;
         } else {
             nameErrorEL.innerText = '';
+            return true;
         }
     }
     
