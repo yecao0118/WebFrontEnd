@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Welcome to Our Cat Service</h1>
+    </header>
+
+    <main class="main-content">
+        <form action="/register" method="POST" class="registration-form">
+            <div class="form-notice">* Indicates required field</div>
+            <div class="form-group name">
+                <label for="name" class="form-label name-label">Cat's Name <span class="star">*</span></label>
+                <input type="text" name="name" class="form-input name-input">
+                <div class="error name-error"></div>
+            </div>
+            <div class="form-group email">
+                <label for="email" class="form-label email-label">Email <span class="star">*</span></label>
+                <input type="text" name="email" class="form-input email-input">
+                <div class="error email-error"></div>
+            </div>
+            <div class="form-group confirm-email">
+                <label for="confirmEmail" class="form-label confirm-label">Confirm Email <span class="star">*</span></label>
+                <input type="text" name="confirm-email" class="form-input confirm-input">
+                <div class="error confirm-error"></div>
+            </div>
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="wants-spam" class="form-checkbox" checked> Yes, send me updates about my cat
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="tier" class="form-label tire-label">Tier</label>
+                <select id="tier" name="tier" class="form-select">
+                    <option value="basic">Basic Care</option>
+                    <option value="premium">Premium Care</option>
+                    <option value="vip">VIP Care</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="privacy">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
