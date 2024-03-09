@@ -1,6 +1,6 @@
 # React Intro Assignment
 
-**Due $SENPAI_DUE_DATE_09**
+**Due Mon Mar 18, 11:59pm PT**
 
 ## Goal
 
