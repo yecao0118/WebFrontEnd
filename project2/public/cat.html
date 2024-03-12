@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Power the Internet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Content</a>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" >
+                <img class="logo-img" src="images/logo.jpg" alt="a gray British Shorthair cat wearing round, reflective sunglasses">
+            </a>
+            <h1 class="web-header">Cats Power the Internet</h1>
+        </div>
+        
+        <button class="hamburger" aria-label="Toggle navigation">
+            <i class="gg-menu"></i>
+        </button>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cat.html">Famous Cats</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Cat Events</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main class="cat-main" id="main">
+        <div class="cat-card-container">
+            <div class="cat-card">
+                <h2 class="cat-card-title">Jorts</h2>
+                <img src="images/cat1.jpg" alt="a tabby cat lying on a white carpet, with a soft-focus light blue background" class="cat-card-image">
+                <p class="cat-card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p>
+            </div>
+            <div class="cat-card">
+                <h2 class="cat-card-title">Jean</h2>
+                <img src="images/cat2.jpg" alt="a cat sleeping on top of a white chair" class="cat-card-image">
+                <p class="cat-card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p>
+            </div>
+            <div class="cat-card">
+                <h2 class="card-title">Maru</h2>
+                <img src="images/car3.jpg" alt="brown tabby cat on white stairs" class="cat-card-image">
+                <p class="card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p class="card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p> 
+            </div>
+            <div class="cat-card">
+                <h2 class="cat-card-title">Nyancat</h2>
+                <img src="images/cat4.jpg" alt="silver tabby kitten on floor" class="cat-card-image">
+                <p class="cat-card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p> 
+            </div>
+            <div class="cat-card">
+                <h2 class="cat-card-title">Grumpy Cat</h2>
+                <img src="images/cat5.jpg" alt="white and gray kitten on white textile" class="cat-card-image">
+                <p class="cat-card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p>
+            </div>
+            <div class="cat-card">
+                <h2 class="cat-card-title">Lil Bub</h2>
+                <img src="images/cat6.jpg" alt="a long-haired cat with green eyes, tongue slightly out, against a blurred background" class="cat-card-image">
+                <p class="cat-card-text">Dolor nulla repellendus quisquam optio in. In optio distinctio doloremque.</p>
+                <p>Lorem ipsum dolor<button type="button" class="open-modal">Subscribe</button>consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <dialog class="modal">
+            <form class="modal-form" action="/subscribe" method="POST">
+                <h3 class="modal-title">Subscribe to the Latest Mews!</h3>
+                <label for="email" class="form-label">Email: <span class="star">* required</span></label>
+                <input type="text" id="email" name="email" class="email">
+                <div class="email-error"></div>
+                <label for="confirm-email" class="form-label">Confirm Email: <span class="star"> * required</span></label>
+                <input type="text" id="confirm-email" name="confirm-email" class="confirm-email"> 
+                <div class="error confirm-error"></div>
+                <div class="modal-actions">
+                    <button type="submit" class="modal-subscribe">Subscribe</button>
+                    <button type="button" class="close-modal">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+    <footer class="footer">
+        <ul class="footer-nav-menu">
+            <li class="footer-item"><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+            <li class="footer-item"><a class="footer-link" href="work-with-us.html">Work with Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="contact-us.html">Contact Us</a></li>
+            <li class="footer-item"><a class="footer-link" href="social-media.html">Social Media</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
