@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.inventory-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.inventory-count {
+  font-size: 24px;
+}
+
