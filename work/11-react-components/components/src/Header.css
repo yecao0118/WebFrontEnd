@@ -1,0 +1,25 @@
+.header {
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "nav";
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+
+}
+
+.header title {
+    grid-area: title;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header nav {
+    grid-area: nav;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
