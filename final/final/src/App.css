@@ -1,0 +1,5 @@
+.home, .about, .contact {
+  padding: 20px;
+  margin: auto;
+  min-height: 100vh;
+}
