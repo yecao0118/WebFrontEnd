@@ -1,0 +1,116 @@
+.contact {
+  padding: 8rem;
+  min-height: 100vh;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-family: "Michroma", sans-serif;
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  font-family: "Michroma", sans-serif;
+  margin: 40px 0 20px 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Michroma', sans-serif;
+}
+
+.required {
+  padding: 0 5px 10px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input, .textarea, .select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.textarea {
+  height: 100px;
+}
+.input-checkbox {
+  width: auto;
+  margin-right: 5px;
+}
+
+.label-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    padding: 4rem;
+    min-height: auto;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-text {
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+
+  .contact-form {
+    max-width: 70%;
+    padding: 10px;
+  }
+
+  .input,.textarea,.select {
+    padding: 8px;
+  }
+
+  .textarea {
+    height: 80px;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+  }
+}
+
